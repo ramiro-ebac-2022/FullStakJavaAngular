@@ -1,0 +1,13 @@
+<h2>Exercicio 01</h2>
+<hr>
+<input type="text" 
+       placeholder="Digite o Nome"       
+       [(ngModel)] = "nome"       
+       />
+<input type="text" 
+       placeholder="Digite o Sobrenome"     
+       [(ngModel)] = "sobrenome"         
+       />
+<p>O nome completo é : <b>{{nome + ' ' + sobrenome}}</b></p>
+<p>As iniciais são : <b>{{getIniciais()}}</b></p>
+<p>A soma dos tamanhos é : <b>{{nome.length + sobrenome.length}}</b></p>

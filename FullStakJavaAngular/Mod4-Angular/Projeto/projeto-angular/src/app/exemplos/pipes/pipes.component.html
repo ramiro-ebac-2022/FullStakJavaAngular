@@ -1,0 +1,28 @@
+<p>{{mensagem | uppercase}}</p>
+<p>{{mensagem | lowercase}}</p>
+<p>{{mensagem | titlecase}}</p>
+
+<p>{{valor | percent}}</p>
+<p>{{valor | percent:'1.0-2'}}</p>
+<p>{{valor | percent:'1.0-1'}}</p>
+
+<p>{{salario | currency}}</p>
+<p>{{salario | currency:'BRL':'symbol':'1.1-2'}}</p>
+
+<p>{{hoje | date}}</p>
+<p>{{hoje | date:'dd/MM/Y'}}</p>
+<p>{{hoje | date:'dd/MM/Y H:m:s'}}</p>
+<p>{{hoje | date:'H:m:s'}}</p>
+
+<p>{{'ameliabf@gmail.com' | ocultarEmail}}</p>
+
+<p>{{mensagem | limitarTexto:11}}</p>
+
+<p>A soma dos valors é : {{valores | somarArray}}</p>
+<input type="number" 
+       placeholder="Digite um valor" 
+       [(ngModel)]="numeroDigitado"
+       />
+<button (click)="inserirNumero()">Inserir número</button>
+
+<br><br>

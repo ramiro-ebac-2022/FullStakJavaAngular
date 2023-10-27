@@ -1,0 +1,21 @@
+<div class="container">
+    <input 
+        [(ngModel)]="email"
+        class="form-control mb-3"
+        type="email"
+        placeholder="Digite seu e-mail"
+    />
+    <input 
+        [(ngModel)]="senha"
+        class="form-control mb-3"
+        type="password"
+        placeholder="Digite a senha"
+    />
+    <button
+        (click)="login()"
+        [disabled]="!email || !senha"
+        class="btn btn-primary"    
+    >
+        Login
+    </button>
+</div>
